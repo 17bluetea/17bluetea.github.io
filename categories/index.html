@@ -170,7 +170,238 @@
         </li>
       
     </ul>
-  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-12-16T13:32:14.480Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/images/home/first.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By bluetea</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.0.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-01-17T05:50:26.822Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/images/home/first.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By bluetea</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.0.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script>
+(function () {
+  if (typeof window === 'undefined' || typeof document === 'undefined') return;
+  if (window.__leafTrailInitialized) return;
+  window.__leafTrailInitialized = true;
+
+  if ('ontouchstart' in window || (typeof navigator !== 'undefined' && navigator.maxTouchPoints > 0)) return;
+
+  function init() {
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    var dpr = window.devicePixelRatio || 1;
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+
+    canvas.style.position = 'fixed';
+    canvas.style.left = '0';
+    canvas.style.top = '0';
+    canvas.style.width = '100%';
+    canvas.style.height = '100%';
+    canvas.style.pointerEvents = 'none';
+    canvas.style.zIndex = '9';
+    canvas.style.mixBlendMode = 'multiply';
+
+    document.body.appendChild(canvas);
+
+    function resize() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    resize();
+    window.addEventListener('resize', resize);
+
+    var leaves = [];
+    var maxLeaves = 36;
+    var lastX = 0;
+    var lastY = 0;
+    var mouseX = window.innerWidth / 2;
+    var mouseY = window.innerHeight / 2;
+    var hasMouse = false;
+    var lastMoveTime = 0;
+    var lastFrameTime = 0;
+    var idleAccumulator = 0;
+
+    var leafColors = [
+      '#00b894',
+      '#16a085',
+      '#1abc9c',
+      '#2ecc71',
+      '#27ae60',
+      '#f1c40f',
+      '#f39c12',
+      '#e67e22',
+      '#d35400'
+    ];
+
+    function rand(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    function addLeaf(x, y, baseVx, baseVy) {
+      if (leaves.length > maxLeaves) {
+        leaves.splice(0, leaves.length - maxLeaves);
+      }
+
+      leaves.push({
+        x: x + rand(-6, 6),
+        y: y + rand(-6, 6),
+        vx: baseVx + rand(-0.4, 0.4),
+        vy: baseVy + rand(-0.2, 0.2),
+        size: rand(10, 20),
+        rotation: rand(0, Math.PI * 2),
+        rotationSpeed: rand(-0.06, 0.06),
+        life: 1,
+        decay: rand(0.003, 0.009),
+        color: leafColors[(Math.random() * leafColors.length) | 0]
+      });
+    }
+
+    function drawLeaf(leaf) {
+      var s = leaf.size;
+      var h = s * 0.6;
+
+      ctx.save();
+      ctx.translate(leaf.x, leaf.y);
+      ctx.rotate(leaf.rotation);
+
+      ctx.globalAlpha = Math.max(leaf.life, 0) * 0.9;
+
+      var gradient = ctx.createLinearGradient(-s / 2, 0, s / 2, 0);
+      gradient.addColorStop(0, leaf.color);
+      gradient.addColorStop(1, '#f5f5f5');
+      ctx.fillStyle = gradient;
+
+      ctx.beginPath();
+      ctx.moveTo(-s / 2, 0);
+      ctx.quadraticCurveTo(-s / 4, -h, 0, -h * 0.85);
+      ctx.quadraticCurveTo(s / 4, -h, s / 2, 0);
+      ctx.quadraticCurveTo(s / 4, h, 0, h * 0.85);
+      ctx.quadraticCurveTo(-s / 4, h, -s / 2, 0);
+      ctx.closePath();
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.moveTo(0, -h * 0.9);
+      ctx.lineTo(0, h * 0.9);
+      ctx.strokeStyle = 'rgba(40, 70, 40, 0.45)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+
+      ctx.restore();
+    }
+
+    function update() {
+      ctx.clearRect(0, 0, width, height);
+
+      var now = typeof performance !== 'undefined' && performance.now ? performance.now() : Date.now();
+      var dt = lastFrameTime ? now - lastFrameTime : 16;
+      lastFrameTime = now;
+
+      for (var i = leaves.length - 1; i >= 0; i--) {
+        var leaf = leaves[i];
+
+        leaf.vx *= 0.985;
+        leaf.vy += 0.015;
+
+        leaf.x += leaf.vx;
+        leaf.y += leaf.vy;
+
+        leaf.rotation += leaf.rotationSpeed;
+        leaf.life -= leaf.decay;
+
+        if (
+          leaf.life <= 0 ||
+          leaf.y - leaf.size > height ||
+          leaf.x + leaf.size < 0 ||
+          leaf.x - leaf.size > width
+        ) {
+          leaves.splice(i, 1);
+          continue;
+        }
+
+        drawLeaf(leaf);
+      }
+
+      if (hasMouse && now - lastMoveTime > 400) {
+        idleAccumulator += dt;
+        if (idleAccumulator >= 380) {
+          idleAccumulator = 0;
+          for (var j = 0; j < 1; j++) {
+            addLeaf(
+              mouseX + rand(-18, 18),
+              mouseY + rand(-18, 18),
+              rand(-0.3, 0.3),
+              rand(-0.6, -0.1)
+            );
+          }
+        }
+      }
+
+      requestAnimationFrame(update);
+    }
+
+    update();
+
+    window.addEventListener('mousedown', function (e) {
+      lastX = e.clientX;
+      lastY = e.clientY;
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      hasMouse = true;
+      lastMoveTime = typeof performance !== 'undefined' && performance.now ? performance.now() : Date.now();
+
+      for (var i = 0; i < 2; i++) {
+        addLeaf(e.clientX, e.clientY, rand(-0.5, 0.5), rand(-0.8, -0.2));
+      }
+    });
+
+    window.addEventListener('mouseleave', function () {
+      hasMouse = false;
+    });
+
+    window.addEventListener('mousemove', function (e) {
+      var now = typeof performance !== 'undefined' && performance.now ? performance.now() : Date.now();
+
+      if (!hasMouse) {
+        lastX = e.clientX;
+        lastY = e.clientY;
+      }
+
+      hasMouse = true;
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      lastMoveTime = now;
+
+      var dx = e.clientX - lastX;
+      var dy = e.clientY - lastY;
+      var dist = Math.sqrt(dx * dx + dy * dy) || 1;
+
+      var count = Math.min(5, Math.floor(dist / 18) + 1);
+
+      var baseVx = dx * 0.04;
+      var baseVy = dy * 0.04;
+
+      for (var i = 0; i < count; i++) {
+        addLeaf(
+          lastX + (dx * i) / count,
+          lastY + (dy * i) / count,
+          baseVx,
+          baseVy - 0.3
+        );
+      }
+
+      lastX = e.clientX;
+      lastY = e.clientY;
+    });
+  }
+
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    init();
+  } else {
+    document.addEventListener('DOMContentLoaded', init);
+  }
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
 POWERMODE.shake = false;
 POWERMODE.mobile = false;
 document.body.addEventListener('input', POWERMODE);

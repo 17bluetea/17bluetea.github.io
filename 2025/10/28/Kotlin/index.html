@@ -1111,7 +1111,238 @@
 
 <p>可以给我们带来巨大的遍历</p>
 <p>好了kotlin的知识就学习完毕了，加油！！！让我们在android见吧</p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://17bluetea.github.io">bluetea</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://17bluetea.github.io/2025/10/28/Kotlin/">https://17bluetea.github.io/2025/10/28/Kotlin/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://17bluetea.github.io" target="_blank">Welcome to my blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Kotlin/">Kotlin</a></div><div class="post-share"><div class="social-share" data-image="/images/qita/kotlin.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/10/21/Java_study/" title="java基础到精通"><img class="cover" src="/images/qita/java.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">java基础到精通</div></div><div class="info-2"><div class="info-item-1">java的一些系统性的知识</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/images/qita/profile%20picture.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">bluetea</div><div class="author-info-description">android and Internet security</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/17bluetea" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:632326649@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">我将持续更新android基础到底层和一些网络安全知识</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Kotlin"><span class="toc-number">1.</span> <span class="toc-text">Kotlin</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E9%87%8A"><span class="toc-number">1.1.</span> <span class="toc-text">注释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-number">1.2.</span> <span class="toc-text">变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.3.</span> <span class="toc-text">数字类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B%E8%BF%90%E7%AE%97"><span class="toc-number">1.4.</span> <span class="toc-text">数字类型运算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.4.1.</span> <span class="toc-text">基础运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.4.2.</span> <span class="toc-text">位运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%90%8E%E6%80%BB%E7%BB%93"><span class="toc-number">1.4.3.</span> <span class="toc-text">最后总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.5.</span> <span class="toc-text">布尔类型介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%EF%BC%88%E6%96%B9%E6%B3%95%EF%BC%89"><span class="toc-number">1.6.</span> <span class="toc-text">函数（方法）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E5%87%BD%E6%95%B0"><span class="toc-number">1.6.1.</span> <span class="toc-text">基础函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95%E7%B3%96"><span class="toc-number">1.6.2.</span> <span class="toc-text">语法糖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#if%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.6.3.</span> <span class="toc-text">if语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#when%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.6.4.</span> <span class="toc-text">when语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.6.5.</span> <span class="toc-text">循环语句</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B"><span class="toc-number">1.7.</span> <span class="toc-text">面向对象编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.7.1.</span> <span class="toc-text">类与对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%E4%B8%8E%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">1.7.2.</span> <span class="toc-text">继承与构造函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E6%AC%A1%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">1.7.3.</span> <span class="toc-text">主构造函数和次构造函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.7.4.</span> <span class="toc-text">接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%80%81"><span class="toc-number">1.7.5.</span> <span class="toc-text">多态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%AF%E8%A7%81%E6%80%A7%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-number">1.7.6.</span> <span class="toc-text">函数的可见性修饰符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E4%B8%8E%E5%8D%95%E4%BE%8B%E7%B1%BB"><span class="toc-number">1.7.7.</span> <span class="toc-text">数据类与单例类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lambda%E7%BC%96%E7%A8%8B"><span class="toc-number">1.8.</span> <span class="toc-text">Lambda编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E5%88%9B%E5%BB%BA%E4%BA%8E%E9%81%8D%E5%8E%86"><span class="toc-number">1.8.1.</span> <span class="toc-text">集合的创建于遍历</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E5%87%BD%E6%95%B0%E5%BC%8FAPI-%E6%9E%84%E9%80%A0"><span class="toc-number">1.8.2.</span> <span class="toc-text">集合的函数式API(构造)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E5%87%BD%E6%95%B0%E5%BC%8FAPI-%E5%87%BD%E6%95%B0"><span class="toc-number">1.8.3.</span> <span class="toc-text">集合的函数式API(函数)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E9%9B%86%E5%90%88%E7%9A%84%E5%87%BD%E6%95%B0%E5%BC%8FAPI"><span class="toc-number">1.8.4.</span> <span class="toc-text">常见的集合的函数式API</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A9%BA%E6%8C%87%E9%92%88%E6%A3%80%E6%9F%A5"><span class="toc-number">1.9.</span> <span class="toc-text">空指针检查</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E7%A9%BA%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.9.1.</span> <span class="toc-text">可空类型系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E7%A9%BA%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7"><span class="toc-number">1.9.2.</span> <span class="toc-text">判空辅助工具</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%86%85%E5%B5%8C%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">1.10.</span> <span class="toc-text">字符串内嵌表达式</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/10/28/Kotlin/" title="Kotlin基础到精通"><img src="/images/qita/kotlin.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Kotlin基础到精通"/></a><div class="content"><a class="title" href="/2025/10/28/Kotlin/" title="Kotlin基础到精通">Kotlin基础到精通</a><time datetime="2025-10-28T03:00:00.000Z" title="发表于 2025-10-28 11:00:00">2025-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/10/21/Java_study/" title="java基础到精通"><img src="/images/qita/java.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java基础到精通"/></a><div class="content"><a class="title" href="/2025/10/21/Java_study/" title="java基础到精通">java基础到精通</a><time datetime="2025-10-21T09:00:00.000Z" title="发表于 2025-10-21 17:00:00">2025-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/10/10/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" title="c语言基础到精通"><img src="/images/qita/c.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言基础到精通"/></a><div class="content"><a class="title" href="/2025/10/10/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" title="c语言基础到精通">c语言基础到精通</a><time datetime="2025-10-10T12:00:00.000Z" title="发表于 2025-10-10 20:00:00">2025-10-10</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/images/home/first.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By bluetea</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.0.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://17bluetea.github.io">bluetea</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://17bluetea.github.io/2025/10/28/Kotlin/">https://17bluetea.github.io/2025/10/28/Kotlin/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://17bluetea.github.io" target="_blank">Welcome to my blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Kotlin/">Kotlin</a></div><div class="post-share"><div class="social-share" data-image="/images/qita/kotlin.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/10/21/Java_study/" title="java基础到精通"><img class="cover" src="/images/qita/java.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">java基础到精通</div></div><div class="info-2"><div class="info-item-1">java的一些系统性的知识</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/images/qita/profile%20picture.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">bluetea</div><div class="author-info-description">android and Internet security</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/17bluetea" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:632326649@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">我将持续更新android基础到底层和一些网络安全知识</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Kotlin"><span class="toc-number">1.</span> <span class="toc-text">Kotlin</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E9%87%8A"><span class="toc-number">1.1.</span> <span class="toc-text">注释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-number">1.2.</span> <span class="toc-text">变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.3.</span> <span class="toc-text">数字类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B%E8%BF%90%E7%AE%97"><span class="toc-number">1.4.</span> <span class="toc-text">数字类型运算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.4.1.</span> <span class="toc-text">基础运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.4.2.</span> <span class="toc-text">位运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%90%8E%E6%80%BB%E7%BB%93"><span class="toc-number">1.4.3.</span> <span class="toc-text">最后总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.5.</span> <span class="toc-text">布尔类型介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%EF%BC%88%E6%96%B9%E6%B3%95%EF%BC%89"><span class="toc-number">1.6.</span> <span class="toc-text">函数（方法）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E5%87%BD%E6%95%B0"><span class="toc-number">1.6.1.</span> <span class="toc-text">基础函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95%E7%B3%96"><span class="toc-number">1.6.2.</span> <span class="toc-text">语法糖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#if%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.6.3.</span> <span class="toc-text">if语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#when%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.6.4.</span> <span class="toc-text">when语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.6.5.</span> <span class="toc-text">循环语句</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B"><span class="toc-number">1.7.</span> <span class="toc-text">面向对象编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.7.1.</span> <span class="toc-text">类与对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%E4%B8%8E%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">1.7.2.</span> <span class="toc-text">继承与构造函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E6%AC%A1%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">1.7.3.</span> <span class="toc-text">主构造函数和次构造函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.7.4.</span> <span class="toc-text">接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%80%81"><span class="toc-number">1.7.5.</span> <span class="toc-text">多态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%AF%E8%A7%81%E6%80%A7%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-number">1.7.6.</span> <span class="toc-text">函数的可见性修饰符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E4%B8%8E%E5%8D%95%E4%BE%8B%E7%B1%BB"><span class="toc-number">1.7.7.</span> <span class="toc-text">数据类与单例类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lambda%E7%BC%96%E7%A8%8B"><span class="toc-number">1.8.</span> <span class="toc-text">Lambda编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E5%88%9B%E5%BB%BA%E4%BA%8E%E9%81%8D%E5%8E%86"><span class="toc-number">1.8.1.</span> <span class="toc-text">集合的创建于遍历</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E5%87%BD%E6%95%B0%E5%BC%8FAPI-%E6%9E%84%E9%80%A0"><span class="toc-number">1.8.2.</span> <span class="toc-text">集合的函数式API(构造)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E5%87%BD%E6%95%B0%E5%BC%8FAPI-%E5%87%BD%E6%95%B0"><span class="toc-number">1.8.3.</span> <span class="toc-text">集合的函数式API(函数)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E9%9B%86%E5%90%88%E7%9A%84%E5%87%BD%E6%95%B0%E5%BC%8FAPI"><span class="toc-number">1.8.4.</span> <span class="toc-text">常见的集合的函数式API</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A9%BA%E6%8C%87%E9%92%88%E6%A3%80%E6%9F%A5"><span class="toc-number">1.9.</span> <span class="toc-text">空指针检查</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E7%A9%BA%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.9.1.</span> <span class="toc-text">可空类型系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E7%A9%BA%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7"><span class="toc-number">1.9.2.</span> <span class="toc-text">判空辅助工具</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%86%85%E5%B5%8C%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">1.10.</span> <span class="toc-text">字符串内嵌表达式</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/10/28/Kotlin/" title="Kotlin基础到精通"><img src="/images/qita/kotlin.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Kotlin基础到精通"/></a><div class="content"><a class="title" href="/2025/10/28/Kotlin/" title="Kotlin基础到精通">Kotlin基础到精通</a><time datetime="2025-10-28T03:00:00.000Z" title="发表于 2025-10-28 11:00:00">2025-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/10/21/Java_study/" title="java基础到精通"><img src="/images/qita/java.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java基础到精通"/></a><div class="content"><a class="title" href="/2025/10/21/Java_study/" title="java基础到精通">java基础到精通</a><time datetime="2025-10-21T09:00:00.000Z" title="发表于 2025-10-21 17:00:00">2025-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/10/10/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" title="c语言基础到精通"><img src="/images/qita/c.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言基础到精通"/></a><div class="content"><a class="title" href="/2025/10/10/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" title="c语言基础到精通">c语言基础到精通</a><time datetime="2025-10-10T12:00:00.000Z" title="发表于 2025-10-10 20:00:00">2025-10-10</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/images/home/first.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By bluetea</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.0.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script>
+(function () {
+  if (typeof window === 'undefined' || typeof document === 'undefined') return;
+  if (window.__leafTrailInitialized) return;
+  window.__leafTrailInitialized = true;
+
+  if ('ontouchstart' in window || (typeof navigator !== 'undefined' && navigator.maxTouchPoints > 0)) return;
+
+  function init() {
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    var dpr = window.devicePixelRatio || 1;
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+
+    canvas.style.position = 'fixed';
+    canvas.style.left = '0';
+    canvas.style.top = '0';
+    canvas.style.width = '100%';
+    canvas.style.height = '100%';
+    canvas.style.pointerEvents = 'none';
+    canvas.style.zIndex = '9';
+    canvas.style.mixBlendMode = 'multiply';
+
+    document.body.appendChild(canvas);
+
+    function resize() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    resize();
+    window.addEventListener('resize', resize);
+
+    var leaves = [];
+    var maxLeaves = 36;
+    var lastX = 0;
+    var lastY = 0;
+    var mouseX = window.innerWidth / 2;
+    var mouseY = window.innerHeight / 2;
+    var hasMouse = false;
+    var lastMoveTime = 0;
+    var lastFrameTime = 0;
+    var idleAccumulator = 0;
+
+    var leafColors = [
+      '#00b894',
+      '#16a085',
+      '#1abc9c',
+      '#2ecc71',
+      '#27ae60',
+      '#f1c40f',
+      '#f39c12',
+      '#e67e22',
+      '#d35400'
+    ];
+
+    function rand(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    function addLeaf(x, y, baseVx, baseVy) {
+      if (leaves.length > maxLeaves) {
+        leaves.splice(0, leaves.length - maxLeaves);
+      }
+
+      leaves.push({
+        x: x + rand(-6, 6),
+        y: y + rand(-6, 6),
+        vx: baseVx + rand(-0.4, 0.4),
+        vy: baseVy + rand(-0.2, 0.2),
+        size: rand(10, 20),
+        rotation: rand(0, Math.PI * 2),
+        rotationSpeed: rand(-0.06, 0.06),
+        life: 1,
+        decay: rand(0.003, 0.009),
+        color: leafColors[(Math.random() * leafColors.length) | 0]
+      });
+    }
+
+    function drawLeaf(leaf) {
+      var s = leaf.size;
+      var h = s * 0.6;
+
+      ctx.save();
+      ctx.translate(leaf.x, leaf.y);
+      ctx.rotate(leaf.rotation);
+
+      ctx.globalAlpha = Math.max(leaf.life, 0) * 0.9;
+
+      var gradient = ctx.createLinearGradient(-s / 2, 0, s / 2, 0);
+      gradient.addColorStop(0, leaf.color);
+      gradient.addColorStop(1, '#f5f5f5');
+      ctx.fillStyle = gradient;
+
+      ctx.beginPath();
+      ctx.moveTo(-s / 2, 0);
+      ctx.quadraticCurveTo(-s / 4, -h, 0, -h * 0.85);
+      ctx.quadraticCurveTo(s / 4, -h, s / 2, 0);
+      ctx.quadraticCurveTo(s / 4, h, 0, h * 0.85);
+      ctx.quadraticCurveTo(-s / 4, h, -s / 2, 0);
+      ctx.closePath();
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.moveTo(0, -h * 0.9);
+      ctx.lineTo(0, h * 0.9);
+      ctx.strokeStyle = 'rgba(40, 70, 40, 0.45)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+
+      ctx.restore();
+    }
+
+    function update() {
+      ctx.clearRect(0, 0, width, height);
+
+      var now = typeof performance !== 'undefined' && performance.now ? performance.now() : Date.now();
+      var dt = lastFrameTime ? now - lastFrameTime : 16;
+      lastFrameTime = now;
+
+      for (var i = leaves.length - 1; i >= 0; i--) {
+        var leaf = leaves[i];
+
+        leaf.vx *= 0.985;
+        leaf.vy += 0.015;
+
+        leaf.x += leaf.vx;
+        leaf.y += leaf.vy;
+
+        leaf.rotation += leaf.rotationSpeed;
+        leaf.life -= leaf.decay;
+
+        if (
+          leaf.life <= 0 ||
+          leaf.y - leaf.size > height ||
+          leaf.x + leaf.size < 0 ||
+          leaf.x - leaf.size > width
+        ) {
+          leaves.splice(i, 1);
+          continue;
+        }
+
+        drawLeaf(leaf);
+      }
+
+      if (hasMouse && now - lastMoveTime > 400) {
+        idleAccumulator += dt;
+        if (idleAccumulator >= 380) {
+          idleAccumulator = 0;
+          for (var j = 0; j < 1; j++) {
+            addLeaf(
+              mouseX + rand(-18, 18),
+              mouseY + rand(-18, 18),
+              rand(-0.3, 0.3),
+              rand(-0.6, -0.1)
+            );
+          }
+        }
+      }
+
+      requestAnimationFrame(update);
+    }
+
+    update();
+
+    window.addEventListener('mousedown', function (e) {
+      lastX = e.clientX;
+      lastY = e.clientY;
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      hasMouse = true;
+      lastMoveTime = typeof performance !== 'undefined' && performance.now ? performance.now() : Date.now();
+
+      for (var i = 0; i < 2; i++) {
+        addLeaf(e.clientX, e.clientY, rand(-0.5, 0.5), rand(-0.8, -0.2));
+      }
+    });
+
+    window.addEventListener('mouseleave', function () {
+      hasMouse = false;
+    });
+
+    window.addEventListener('mousemove', function (e) {
+      var now = typeof performance !== 'undefined' && performance.now ? performance.now() : Date.now();
+
+      if (!hasMouse) {
+        lastX = e.clientX;
+        lastY = e.clientY;
+      }
+
+      hasMouse = true;
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      lastMoveTime = now;
+
+      var dx = e.clientX - lastX;
+      var dy = e.clientY - lastY;
+      var dist = Math.sqrt(dx * dx + dy * dy) || 1;
+
+      var count = Math.min(5, Math.floor(dist / 18) + 1);
+
+      var baseVx = dx * 0.04;
+      var baseVy = dy * 0.04;
+
+      for (var i = 0; i < count; i++) {
+        addLeaf(
+          lastX + (dx * i) / count,
+          lastY + (dy * i) / count,
+          baseVx,
+          baseVy - 0.3
+        );
+      }
+
+      lastX = e.clientX;
+      lastY = e.clientY;
+    });
+  }
+
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    init();
+  } else {
+    document.addEventListener('DOMContentLoaded', init);
+  }
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
 POWERMODE.shake = false;
 POWERMODE.mobile = false;
 document.body.addEventListener('input', POWERMODE);
